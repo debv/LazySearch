@@ -5,7 +5,7 @@ Made for people who want to share/watch videos for currently playing songs with 
 
 **How to use LazySearch**
 
-Clone or download this repo and put the LazySearach app wherever your heart desires it to be on your computer.
+Clone or download this repo and put the LazySearch app wherever your heart desires it to be on your computer.
 
 Click to run LazySearch, and if Spotify is running, LazySearch will pull up the YouTube search results for the song that is currently playing. If Spotify isn't running, it will let you know that too. 
 
