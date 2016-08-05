@@ -11,6 +11,6 @@ Click to run LazySearch, and if Spotify is running, LazySearch will pull up the 
 
 When LazySearch is done searching for a song it will quit itself. To search for another currently playing song simply click the LazySearch shortcut again.
 
-**Music applications compatible with LazySearch**
+**Compatible music applications**
 
 Currently LazySearch only handles searching for songs that are currently playing on Spotify. Future plans to add in iTunes. (When I'm feeling less lazy.)
