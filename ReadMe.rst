@@ -1,7 +1,7 @@
 LazySearch
 ==============
 
-Made for people who want to share/watch videos for currently playing songs with just a click.
+Made for people who want to find/watch videos for currently playing songs with just a click.
 
 **How to use LazySearch**
 
