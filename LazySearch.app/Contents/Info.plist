@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>15D2002</string>
+	<string>16A275a</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDocumentTypes</key>
@@ -46,31 +46,33 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>7B60</string>
+	<string>8R174l</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>15D2002</string>
+	<string>16A275a</string>
 	<key>DTSDKName</key>
-	<string>macosx10.11internal</string>
+	<string>macosx10.12internal</string>
 	<key>DTXcode</key>
-	<string>0710</string>
+	<string>0800</string>
 	<key>DTXcodeBuild</key>
-	<string>7B60</string>
+	<string>8R174l</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.utilities</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Deborah Venuti</string>
+	<string>2016 | Deborah Venuti</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>OSAScriptingDefinition</key>
+	<string>LazySearch for lazy people</string>
 	<key>WindowState</key>
 	<dict>
 		<key>bundleDividerCollapsed</key>
-		<false/>
+		<true/>
 		<key>bundlePositionOfDivider</key>
-		<real>572</real>
+		<real>0.0</real>
 		<key>dividerCollapsed</key>
 		<false/>
 		<key>eventLogLevel</key>
@@ -80,7 +82,7 @@
 		<key>positionOfDivider</key>
 		<real>421</real>
 		<key>savedFrame</key>
-		<string>222 85 871 672 0 0 1280 777 </string>
+		<string>20 91 700 672 0 0 1280 778 </string>
 		<key>selectedTab</key>
 		<string>description</string>
 	</dict>
