@@ -1,7 +1,11 @@
 LazySearch
 ==============
-
 Made for people who want to find/watch videos for currently playing songs with just a click.
+
+
+**Update:**
+
+I'm currently working on a version which automates the process of posting to Facebook automatically once the video for the currently playing song is found. I am working on a simple login interface that will authenticate the Facebook account on login and once that is completed I will update this repo.
 
 **How to use LazySearch**
 
