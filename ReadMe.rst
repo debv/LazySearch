@@ -5,11 +5,11 @@ Made for people who want to find/watch videos for currently playing songs with j
 
 **Update:**
 
-I'm currently working on a Python version of LazySearch (`LazySearch.py`) which automates the process of posting to Facebook once the video for the currently playing song is found. I am working on a simple login interface that will handle the authentication of the Facebook account on login and once that is completed I will update this repo.
+I'm currently working on a Python version of LazySearch (LazySearch.py) which automates the process of posting to Facebook once the video for the currently playing song is found. I am working on a simple login interface that will handle the authentication of the Facebook account on login and once that is completed I will update this repo.
 
 **How to use LazySearch**
 
-Clone or download this repo and put the LazySearch app wherever your heart desires it to be on your computer.
+Clone or download this repo and put the LazySearch.app shortcut wherever your heart desires it to be on your computer.
 
 Click to run LazySearch, and if Spotify is running, LazySearch will pull up the YouTube search results for the song that is currently playing. If Spotify isn't running, it will let you know that too. 
 
