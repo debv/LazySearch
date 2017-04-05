@@ -13,10 +13,10 @@ from bs4 import BeautifulSoup
 from pync import Notifier
 
 def main():
-# Config Facebook ID and Tokens
+# Config Facebook ID and Tokens (using for testing - in process of implementing browser OAuth)
     fbConfig = {
-        "page_id"      : "***REMOVED***",
-        "access_token" : "EA***REMOVED***" }
+        "page_id"      : "",
+        "access_token" : "" }
 
 # Mac
 # AppleScript to get currently playing artist and song from Spotify (no auth req)
