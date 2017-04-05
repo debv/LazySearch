@@ -1,5 +1,5 @@
 # LazySearch for lazy people
-# Deborah Venuti | 2016
+# Deborah Venuti | 2017
 
 #TODO:
 # Auto user authentication (long life)
@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 from pync import Notifier
 
 def main():
-# Config Facebook ID and Tokens (using for testing - in process of implementing browser OAuth)
+# Config Facebook ID and Tokens (using for testing - in process of implementing browser OAuth for long life tokens)
     fbConfig = {
         "page_id"      : "",
         "access_token" : "" }
@@ -71,7 +71,8 @@ def main():
     'description': '',
     'picture': ''
     }
-
+    
+    # Post to wall
     graph.put_wall_post(message='',attachment=attachment)
 
 
