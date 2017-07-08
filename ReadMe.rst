@@ -2,8 +2,10 @@ LazySearch
 ==============
 Made for people who want to find/watch videos for currently playing songs with just a click.
 
+**Update: July 2017**
+I still haven't gotten around to finishing the Python version BUT the applet still works so you can just clone or download the repo and put the LazySearch.app shortcut wherever and it should work fine.
 
-**Update:**
+**Update: April 2017**
 
 I'm currently working on a Python version of LazySearch (LazySearch.py) which automates the process of posting to Facebook once the video for the currently playing song is found. I am working on a simple login interface that will handle the authentication of the Facebook account on login and once that is completed I will update this repo.
 
