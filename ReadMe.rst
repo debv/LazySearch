@@ -3,6 +3,7 @@ LazySearch
 Made for people who want to find/watch videos for currently playing songs with just a click.
 
 **Update: July 2017**
+
 I still haven't gotten around to finishing the Python version BUT the applet still works so you can just clone or download the repo and put the LazySearch.app shortcut wherever and it should work fine.
 
 **Update: April 2017**
