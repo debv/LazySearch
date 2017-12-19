@@ -11,12 +11,13 @@ import applescript
 import urllib
 from bs4 import BeautifulSoup
 from pync import Notifier
+from keys import *
 
 def main():
 # Config Facebook ID and Tokens (using for testing - in process of implementing browser OAuth for long life tokens)
     fbConfig = {
-        "page_id"      : "",
-        "access_token" : "" }
+        "page_id"      : page_id,
+        "access_token" : access_token }
 
 # Mac
 # AppleScript to get currently playing artist and song from Spotify (no auth req)
@@ -33,8 +34,7 @@ def main():
             if isRunning is true then
                 tell application \"Spotify\"
                     set artistName to artist of current track as string
-                    set songName to name of current track as string
-                    
+                    set songName to name of current track as string 
                     set currentSong to artistName & \" - \" & songName
                 end tell
             end if
