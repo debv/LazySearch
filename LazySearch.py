@@ -6,7 +6,6 @@
 # Get rid of ugly terminal notif
 
 import fbconsole
-import facebook
 import applescript
 import urllib
 from bs4 import BeautifulSoup
@@ -14,25 +13,26 @@ from pync import Notifier
 from keys import *
 
 def main():
-# Config Facebook ID and Tokens (using for testing - in process of implementing browser OAuth for long life tokens)
-    fbConfig = {
-        "page_id"      : page_id,
-        "access_token" : access_token }
-
 # Mac
 # AppleScript to get currently playing artist and song from Spotify (no auth req)
     scpt = applescript.AppleScript('''
         on run
-            set appName to \"Spotify\"
+            set spotifyApp to \"Spotify\"
+            set itunesApp to \"iTunes\"
+            set runningApp to \"\"
             set isRunning to false
             tell application \"System Events\"
-                if exists process appName then
+                if (exists process spotifyApp) then
                     set isRunning to true
+                    set runningApp to spotifyApp
+                else if (exists process itunesApp) then
+                    set isRunning to true
+                    set runningApp to itunesApp
                 end if
             end tell
             
             if isRunning is true then
-                tell application \"Spotify\"
+                tell application runningApp
                     set artistName to artist of current track as string
                     set songName to name of current track as string 
                     set currentSong to artistName & \" - \" & songName
@@ -54,11 +54,11 @@ def main():
     html = response.read()
     soup = BeautifulSoup(html, "html.parser")
     video = soup.find(attrs={'class':'yt-uix-tile-link'})
-    videoURL = 'https://www.youtube.com' + video['href']
+    videoUrl = 'https://www.youtube.com' + video['href']
 
     Notifier.notify(title='LazySearch',
                     message='Successfully Shared: ' + nowPlaying,
-                    open='https://www.facebook.com/?sk=h_chr'
+                    open='' + videoUrl
                     )
                         
 # Post video for currently playing song 
