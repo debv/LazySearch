@@ -1,20 +1,17 @@
 # LazySearch for lazy people
-# Deborah Venuti | 2017
+# Deborah Venuti | 2019
 
 #TODO:
-# Auto user authentication (long life)
 # Get rid of ugly terminal notif
 
-import fbconsole
 import applescript
 import urllib
 from bs4 import BeautifulSoup
 from pync import Notifier
-from keys import *
 
 def main():
 # Mac
-# AppleScript to get currently playing artist and song from Spotify (no auth req)
+# AppleScript to get currently playing artist and song from Spotify / iTunes (no auth req)
     scpt = applescript.AppleScript('''
         on run
             set spotifyApp to \"Spotify\"
@@ -61,20 +58,5 @@ def main():
                     open='' + videoUrl
                     )
                         
-# Post video for currently playing song 
-    graph = facebook.GraphAPI(fbConfig['access_token'])
-
-    attachment = {
-    'name': nowPlaying,
-    'link': videoURL,
-    'caption': '',
-    'description': '',
-    'picture': ''
-    }
-    
-    # Post to wall
-    graph.put_wall_post(message='',attachment=attachment)
-
-
 if __name__ == "__main__":
     main()
